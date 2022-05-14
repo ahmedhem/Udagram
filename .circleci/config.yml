@@ -40,7 +40,7 @@ jobs:
       - run:
           name: Deploy App
           command: |
-            cd udagram && npm run frontend:deploy
+            cd udagram && npm run deploy
 
       - run:
           name: "Say hello"
