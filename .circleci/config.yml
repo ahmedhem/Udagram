@@ -38,13 +38,9 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Install awscli
-          command: sudo apt-get install -y awscli
-      - run:
           name: Deploy App
           command: |
-            cd udagram && npm run deploy
-
+            cd udagram && npm run frontend:deploy
       - run:
            name: "Say hello"
            command: "echo Hello, World!"
