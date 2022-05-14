@@ -38,6 +38,10 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
+          name: install aws
+          command: |
+            sudo apt-get install -y libpython-dev && curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && unzip awscli-bundle.zip && ./awscli-bundle/install -b ~/bin/aws
+      - run:
           name: Deploy App
           command: |
             cd udagram && npm run frontend:deploy
