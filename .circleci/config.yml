@@ -38,11 +38,8 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Install PIP
-          command: sudo apt-get install python-pip python-dev
-      - run:
           name: Install awscli
-          command: sudo pip install awscli
+          command: apt-get update && apt-get install -y awscli
       - run:
           name: Deploy App
           command: |
