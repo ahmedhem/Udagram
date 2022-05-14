@@ -40,7 +40,7 @@ jobs:
       - run:
           name: install aws
           command: |
-            sudo apt-get install software-properties-common  && sudo apt-add-repository universe  && sudo apt-get update && sudo apt-get install python-pip && pip install awscli
+            sudo apt-get install software-properties-common  && sudo apt-add-repository universe  && sudo apt update && sudo apt upgrade -y && sudo apt-get install python3-pip && pip install awscli
 
       - run:
           name: Deploy App
