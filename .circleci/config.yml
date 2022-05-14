@@ -53,11 +53,11 @@ jobs:
           name: Configure AWS default region
           command: |
             aws configure set default.region  $region
-        - run:
+      - run:
           name: Configure AWS token session
           command: |
             aws configure set aws_session_token  $aws_session_token
-        - run:
+      - run:
           name: Configure AWS sercurity session
           command: |
             aws configure set aws_security_token $aws_security_token
