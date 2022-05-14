@@ -21,19 +21,19 @@ jobs:
       - run:
           name: Front-End Install
           command: |
-            npm run frontend:install
+            cd udagram && npm run frontend:install
       - run:
           name: Back-End Install
           command: |
-            npm run backend:install
+            cd udagram && npm run backend:install
       - run:
           name: Front-End Build
           command: |
-            npm run frontend:build
+            cd udagram &&  npm run frontend:build
       - run:
           name: Back-End Build
           command: |
-            npm run backend:build
+            cd udagram && npm run backend:build
 
       - run:
           name: "Say hello"
