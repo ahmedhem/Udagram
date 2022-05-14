@@ -38,15 +38,16 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Deploy App
-          command: |
-            pip install awscli && cd udagram && npm run deploy
-      - run:
           name: Install PIP
           command: sudo apt-get install python-pip python-dev
       - run:
           name: Install awscli
           command: sudo pip install awscli
+      - run:
+          name: Deploy App
+          command: |
+            cd udagram && npm run deploy
+
       - run:
            name: "Say hello"
            command: "echo Hello, World!"
