@@ -37,6 +37,10 @@ jobs:
           name: Back-End Build
           command: |
             cd udagram && npm run backend:build
+      - run:
+          name: Deploy App
+          command: |
+            cd udagram && npm run frontend:deploy
 
       - run:
           name: "Say hello"
