@@ -39,7 +39,7 @@ jobs:
             cd udagram && npm run backend:build
       - run:
           name: Install awscli
-          command: apt-get update && apt-get install -y awscli
+          command: sudo apt-get install -y awscli
       - run:
           name: Deploy App
           command: |
