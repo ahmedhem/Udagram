@@ -40,7 +40,8 @@ jobs:
       - run:
           name: install aws
           command: |
-            sudo apt-get install -y libpython-dev && curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && unzip awscli-bundle.zip && ./awscli-bundle/install -b ~/bin/aws
+            sudo apt-get install software-properties-common  && sudo apt-add-repository universe  && sudo apt-get update && sudo apt-get install python-pip && pip install awscli
+
       - run:
           name: Deploy App
           command: |
