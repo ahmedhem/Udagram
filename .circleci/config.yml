@@ -38,26 +38,6 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Configure AWS Access Key ID
-          command: |
-            aws configure set aws_access_key_id $aws_access_key_id
-      - run:
-          name: Configure AWS Secret Access Key
-          command: |
-            aws configure set aws_secret_access_key  $aws_secret_access_key
-      - run:
-          name: Configure AWS default region
-          command: |
-            aws configure set default.region  $region
-      - run:
-          name: Configure AWS token session
-          command: |
-            aws configure set aws_session_token  $aws_session_token
-      - run:
-          name: Configure AWS sercurity session
-          command: |
-            aws configure set aws_security_token $aws_security_token
-      - run:
           name: Deploy App
           command: |
             cd udagram && npm run frontend:deploy
