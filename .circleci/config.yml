@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Front-End Build
           command: |
-            cd udagram &&  npm run frontend:build --prod
+            cd udagram &&  npm run frontend:build
       - run:
           name: Back-End Build
           command: |
