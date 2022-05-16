@@ -72,10 +72,6 @@ AWS_SESSION_TOKEN
 ![Elastic Beanstalk Environment](./documentation/screenshots/elastic%20envirmoment.png)
 
 
-### Elastic Beanstalk Environment secrets
-
-![Elastic Beanstalk Environment](./documentation/screenshots/elastic%20envirmoment%20variables.png)
-
 ### FrontEnd S3 Bucket
 
 ![FrontEnd S3 Bucket](./documentation/screenshots/S3%20bucket.png)
@@ -91,14 +87,13 @@ AWS_SESSION_TOKEN
 ### CircleCI Pipeline
 
 ![CircleCI Pipeline](./documentation/screenshots/circleci%20prject.png)
-![CircleCI Pipeline](./documentation/screenshots/circleci%202.png)
 
 ### CircleCI Pipeline secrets
 
 ![CircleCI Pipeline](./documentation/screenshots/circli%20ce%20env.png)
 
 Pipeline Diagram
-![Pipeline diagram](documentation/Pipeline process/pipline_diagram.jpg)
+![Pipeline diagram](documentation/Pipeline process/pipline_diagram.drawio.png)
 
 ### Architecture
 

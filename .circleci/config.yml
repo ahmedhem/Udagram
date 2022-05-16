@@ -41,6 +41,14 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
+          name: Front-End Test
+          command: |
+            cd udagram && npm run frontend:test
+      - run:
+          name: Back-End test
+          command: |
+            cd udagram && npm run backend:test
+      - run:
           name: Deploy backend App
           command: |
             cd udagram && npm run backend:deploy
@@ -48,9 +56,6 @@ jobs:
           name: Deploy frontend App
           command: |
             cd udagram && npm run frontend:deploy
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
