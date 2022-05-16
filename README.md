@@ -98,8 +98,8 @@ AWS_SESSION_TOKEN
 ![CircleCI Pipeline](./documentation/screenshots/circli%20ce%20env.png)
 
 Pipeline Diagram
-![Pipeline diagram](./documentation/diagrams/pipline_diagram.jpg)
+![Pipeline diagram](documentation/Pipeline process/pipline_diagram.jpg)
 
 ### Architecture
 
-![Architecture](./documentation/diagrams/Archetecture.jpg)
+![Architecture](documentation/Infrastructure description/Archetecture.jpg)
