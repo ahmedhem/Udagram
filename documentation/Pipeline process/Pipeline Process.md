@@ -1,6 +1,5 @@
 # Pipeline Process
-
-The pipeline is setup and connected with this GitHub repository in CircleCI.
+The pipeline is deployed using CircleCI which integrates with GitHub so to automate build, test, and deploy the pipeline.
 
 ## Pipeline commands order
 
