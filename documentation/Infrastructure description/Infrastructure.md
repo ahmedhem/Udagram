@@ -1,14 +1,13 @@
 # Infrastructure
 
-## AWS services in use
+## AWS used services:
 
 - **RDS**
-    - provides a public accessible PostgreSQL database
+    - provides a PostgreSQL database
 - **S3**
-    - provides the frontend hosting
+    - for frontend hosting
 - **Elastic Beanstalk**
-    - provides the backend hosting
-
+    - for the backend hosting
 
 ## Infrastracture Schema
 
