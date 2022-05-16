@@ -41,7 +41,11 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Deploy App
+          name: Deploy backend App
+          command: |
+            cd udagram && npm run backend:deploy
+      - run:
+          name: Deploy frontend App
           command: |
             cd udagram && npm run frontend:deploy
       - run:
