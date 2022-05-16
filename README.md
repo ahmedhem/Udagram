@@ -1,13 +1,105 @@
-# Hosting a Full-Stack Application
+# Udagram
 
-### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
+This project is part of the Udacity Advancded web developement. 
+The purpose of this project is to host it on aws cloud service.
+## Tools and technologies used in the project
 
----
+Node js
 
-In this project you will learn how to take a newly developed Full-Stack application built for a retailer and deploy it to a cloud service provider so that it is available to customers. You will use the aws console to start and configure the services the application needs such as a database to store product information and a web server allowing the site to be discovered by potential customers. You will modify your package.json scripts and replace hard coded secrets with environment variables in your code.
+Express js
 
-After the initial setup, you will learn to interact with the services you started on aws and will deploy manually the application a first time to it. As you get more familiar with the services and interact with them through a CLI, you will gradually understand all the moving parts.
+TypeScript
 
-You will then register for a free account on CircleCi and connect your Github account to it. Based on the manual steps used to deploy the app, you will write a config.yml file that will make the process reproducible in CircleCi. You will set up the process to be executed automatically based when code is pushed on the main Github branch.
+Jasmine and Super set for testing
 
-The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
+Angular
+
+
+## Live Project
+
+http://udagram123.s3-website-us-east-1.amazonaws.com
+
+
+
+## Backend Scripts(udagram-api)
+
+After navigating to `udagram-api` directory, you can use the the following scripts:
+
+```bash
+npm start        # Starts the server
+npm run build    # Builds the api
+npm run dev      # Run in developement enviromen
+npm run test     # run unit tests
+npm run prod   # Run in production enviroment
+npm run deploy   # deploy to elasticbeanstack 
+
+```
+
+## Frontend Scripts(udagram-frontend)
+
+```bash
+npm start        # Starts the server
+npm run build    # Builds the api
+npm run dev      # Run in developement enviromen
+npm run test     # run unit tests
+```
+
+## Enviromental Variables Set up
+Bellow are the environmental variables that needs to be set in a `.env` file. 
+```bash
+
+PORT
+POSTGRES_HOST
+POSTGRES_DB
+POSTGRES_PORT
+POSTGRES_USERNAME
+POSTGRES_PASSWORD
+AWS_BUCKET
+AWS_PROFILE
+AWS_REGION
+JWT_SECRET
+URL
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY	
+AWS_SESSION_TOKEN	
+```
+
+
+## Configuration Screenshots
+
+### Elastic Beanstalk Environment
+
+![Elastic Beanstalk Environment](./documentation/screenshots/elastic%20envirmoment.png)
+
+
+### Elastic Beanstalk Environment secrets
+
+![Elastic Beanstalk Environment](./documentation/screenshots/elastic%20envirmoment%20variables.png)
+
+### FrontEnd S3 Bucket
+
+![FrontEnd S3 Bucket](./documentation/screenshots/S3%20bucket.png)
+
+### FrontEnd S3 Bucket Static Web hosting
+
+![FrontEnd S3 Bucket](./documentation/screenshots/static%20s3.png)
+
+### PostgreSQL RDS database
+
+![PostgreSQL RDS database](./documentation/screenshots/Databse.png)
+
+### CircleCI Pipeline
+
+![CircleCI Pipeline](./documentation/screenshots/circleci%20prject.png)
+![CircleCI Pipeline](./documentation/screenshots/circleci%202.png)
+
+### CircleCI Pipeline secrets
+
+![CircleCI Pipeline](./documentation/screenshots/circli%20ce%20env.png)
+
+Pipeline Diagram
+![Pipeline diagram](./documentation/diagrams/pipline_diagram.jpg)
+
+### Architecture
+
+![Architecture](./documentation/diagrams/Archetecture.jpg)
