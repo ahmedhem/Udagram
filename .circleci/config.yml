@@ -41,14 +41,6 @@ jobs:
           command: |
             cd udagram && npm run backend:build
       - run:
-          name: Front-End Test
-          command: |
-            cd udagram && npm run frontend:test
-      - run:
-          name: Back-End test
-          command: |
-            cd udagram && npm run backend:test
-      - run:
           name: Deploy backend App
           command: |
             cd udagram && npm run backend:deploy
